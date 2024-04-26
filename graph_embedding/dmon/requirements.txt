@@ -1,3 +1,7 @@
 numpy>=1.14.0
 scipy>=1.0.0
-tensorflow>=2.0.0
+scikit-learn>=0.19.1
+--extra-index-url https://pypi.nvidia.com
+tensorrt-bindings==8.6.1
+tensorrt-libs==8.6.1  
+tensorflow[and-cuda]==2.15.0

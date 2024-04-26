@@ -36,6 +36,7 @@ import numpy as np
 import scipy.sparse
 from scipy.sparse import base
 import sklearn.metrics
+TF_ENABLE_ONEDNN_OPTS=0
 import tensorflow.compat.v2 as tf
 from graph_embedding.dmon import dmon
 from graph_embedding.dmon import gcn
