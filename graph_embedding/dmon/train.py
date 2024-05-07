@@ -161,7 +161,7 @@ def main(argv):
     raise app.UsageError('Too many command-line arguments.')
   # Load and process the data (convert node features to dense, normalize the
   # graph, convert it to Tensorflow sparse tensor.
-  adjacency, features, labels, label_indices = load_npz(FLAGS.graph_path)
+  adjacency, features, labels, label_indices = load_npz(FLAGS.graph_path) # the data is here
   features = features.todense()
   n_nodes = adjacency.shape[0]
   feature_size = features.shape[1]
