@@ -197,6 +197,9 @@ def main(argv):
   assignments = assignments.numpy()
   clusters = assignments.argmax(axis=1)  # Convert soft to hard clusters.
 
+  for i in range(len(labels)):
+    print(f'Predicted cluster: {clusters[label_indices][i]} and the truth is {labels[i]}')
+
   # Prints some metrics used in the paper.
   print('Conductance:', metrics.conductance(adjacency, clusters))
   print('Modularity:', metrics.modularity(adjacency, clusters))
